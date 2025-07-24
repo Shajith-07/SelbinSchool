@@ -121,10 +121,10 @@
     <section id="contact" class="contact-section animate-on-scroll">
       <form class="contact-form" action="https://formspree.io/f/xgvzajvw" method="post" id="contactForm">
         <h3>Contact Us</h3>
-        <input type="text" id="name" placeholder="Your Name *" required>
-        <input type="email" id="email" placeholder="Your Email *" required>
-        <input type="tel" id="phone" placeholder="Phone Number *" required pattern="[0-9]{10,}">
-        <select id="course">
+        <input type="text" id="name" name="name" placeholder="Your Name *" required>
+        <input type="email" id="email" name="email" placeholder="Your Email *" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number *" required pattern="[0-9]{10,}">
+        <select id="course" name="course">
           <option value="">Interested Course</option>
           <option>Advance Diploma in Hotel Management & Tourism</option>
           <option>Advance Diploma in Hotel Management & Catering Science</option>
@@ -134,7 +134,7 @@
           <option>Diploma in Hotel Management</option>
           <option>Diploma in Food Technology Course</option>
         </select>
-        <textarea id="message" rows="3" placeholder="Message (optional)"></textarea>
+        <textarea id="message" name="message" rows="3" placeholder="Message (optional)"></textarea>
         <button type="submit">Send Message</button>
         <div class="form-msg" id="formMsg"></div>
       </form>
@@ -144,7 +144,8 @@
         <strong style="margin-top:1em; display:block;">Phone:</strong>
         <div><a href="tel:+919488317412">+919488317412</a></div>
         <strong style="margin-top:1em; display:block;">Email:</strong>
-        <div><a href="selbinschoolprincipal@gmail.com">selbinschoolprincipal@gmail.com</a></div>
+        <div><a href="mailto:selbinschoolprincipal@gmail.com">selbinschoolprincipal@gmail.com</a>
+       </div>
         <div class="map-emb">
           <iframe src="https://maps.google.com/maps?q=Kalkurumpothai,%20North%20Thamaraikulam,%20Kanyakumari&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%" height="170" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
