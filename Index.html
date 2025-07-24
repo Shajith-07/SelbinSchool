@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Selbin School of Management & Applied Science</title>
+  <title>Selbin School of Management & Applied Sciences</title>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
@@ -16,7 +16,7 @@
 <body>
   <header>
     <img src="logo.jpeg" alt="Selbin School Logo" class="logo-img" loading="lazy">
-    <h1 class="fade-down">Selbin School of Management & Applied Science</h1>
+    <h1 class="fade-down">Selbin School of Management & Applied Sciences</h1>
     <div class="tagline fade-in">Shaping Hospitality Leaders for Tomorrow</div>
     <nav>
       <a href="#courses">Courses</a>
@@ -26,13 +26,23 @@
     </nav>
   </header>
 
+  <div class="below-header-gallery animate-on-scroll">
+    <img src="Chef.jpg" alt="Hospitality Excellence" />
+    <img src="chef1.jpg" alt="Modern Hotel Lobby" />
+    <img src="chef2.jpg" alt="Student Teamwork" />
+  </div>
+
   <main class="container">
-    <div class="address fade-in">📍 First Floor, 8/122, Kalkurumpothai, North Thamaraikulam, Kanyakumari</div>
-    <section class="about fade-in" id="about">
-      Selbin School of Management & Applied Science delivers quality Hotel Management and Tourism education through professional diplomas and advanced diplomas. Affiliated to the <strong>Council for Vocational Education and Skill Development (CVESD)</strong>, offering skilled-based learning, hands-on hospitality training, and career support for future leaders in hospitality.
+    <div class="address animate-on-scroll">
+      📍 First Floor, 8/122, Kalkurumpothai, North Thamaraikulam, Kanyakumari
+    </div>
+
+    <section class="about animate-on-scroll" id="about">
+      Selbin School of Management & Applied Science delivers quality Hotel Management and Tourism education through professional diplomas and advanced diplomas. Affiliated to the
+      <strong>Council for Vocational Education and Skill Development (CVESD)</strong>, offering skilled-based learning, hands-on hospitality training, and career support for future leaders in hospitality.
     </section>
 
-    <section id="courses" class="fade-up">
+    <section id="courses" class="animate-on-scroll">
       <h2>Approved Hotel Management & Tourism Courses</h2>
       <table>
         <tr>
@@ -70,7 +80,7 @@
       </table>
     </section>
 
-    <section class="affiliation fade-in" id="affiliation">
+    <section class="affiliation animate-on-scroll" id="affiliation">
       <div class="affiliation-details">
         <div class="affiliation-title">Affiliated to:</div>
         <div class="affiliation-bodies">
@@ -83,13 +93,13 @@
       </div>
     </section>
 
-    <section class="cta fade-up">
+    <section class="cta animate-on-scroll">
       <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Apply Now</button>
       <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Download Prospectus</button>
       <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Schedule a Visit</button>
     </section>
 
-    <section class="testimonials fade-in">
+    <section class="testimonials animate-on-scroll">
       <div class="testimonial-item">
         <div class="testimonial-quote">
           "The practical exposure and expert faculty at Selbin gave me a great start in the hospitality industry."
@@ -108,7 +118,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact-section fade-up">
+    <section id="contact" class="contact-section animate-on-scroll">
       <form class="contact-form" autocomplete="off" id="contactForm">
         <h3>Contact Us</h3>
         <input type="text" id="name" placeholder="Your Name *" required>
@@ -132,9 +142,9 @@
         <strong>Address:</strong>
         <div>First Floor, 8/122, Kalkurumpothai,<br>North Thamaraikulam,<br>Kanyakumari</div>
         <strong style="margin-top:1em; display:block;">Phone:</strong>
-        <div><a href="tel:+919999999999">+91-99999-99999</a></div>
+        <div><a href="tel:+919488317412">+919488317412</a></div>
         <strong style="margin-top:1em; display:block;">Email:</strong>
-        <div><a href="mailto:info@selbin.edu.in">info@selbin.edu.in</a></div>
+        <div><a href="selbinschoolprincipal@gmail.com">selbinschoolprincipal@gmail.com</a></div>
         <div class="map-emb">
           <iframe src="https://maps.google.com/maps?q=Kalkurumpothai,%20North%20Thamaraikulam,%20Kanyakumari&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%" height="170" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -146,9 +156,11 @@
   <div class="modal" id="modal" onclick="closeModal()">
     <img src="" alt="Gallery" id="modalImg">
   </div>
+  
   <footer class="fade-in">
     &copy; 2025 Selbin School of Management & Applied Science | Kanyakumari | CVESD Affiliated
   </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
