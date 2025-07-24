@@ -482,14 +482,19 @@ footer {
 /* Mobile styles */
 @media (max-width: 700px) {
   .below-header-gallery {
-    gap: 11px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
   }
-
   .below-header-gallery img {
-    max-width: 95vw;
-    height: 96px;
+    max-width: 97vw;
+    width: 97vw;
+    height: auto;          /* Allows natural scaling, not forced crop */
+    object-fit: contain;   /* Ensures nothing is cropped */
+    border-radius: 12px;
   }
 }
+
 
 /* Tablet and desktops */
 @media (min-width: 850px) {
