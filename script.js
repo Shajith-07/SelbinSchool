@@ -30,21 +30,4 @@ document.getElementById('modal').addEventListener('click', function(e) {
   if (e.target === this) closeModal();
 });
 
-// Contact form validation and feedback
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const msg = document.getElementById('formMsg');
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
 
-  if (!name || !/\S+@\S+\.\S+/.test(email) || !/^[0-9]{10,}$/.test(phone)) {
-    msg.innerText = "Please fill all required fields correctly.";
-    msg.style.color = "#ea2a2a";
-    return;
-  }
-  msg.innerText = "Thank you! We will contact you soon.";
-  msg.style.color = "#49af14";
-  this.reset();
-  setTimeout(() => { msg.innerText = ''; }, 3500);
-});
